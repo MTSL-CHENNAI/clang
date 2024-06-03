@@ -7,8 +7,8 @@ main_cpp: main.cpp
 
 # Rule to generate compilation database
 compile_commands.json:
-    bear -- make main_cpp
+	bear -- make main_cpp
 
 .PHONY: clean
 clean:
-    rm -f main_cpp compile_commands.json
+	rm -f main_cpp compile_commands.json
